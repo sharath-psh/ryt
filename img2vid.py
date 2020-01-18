@@ -8,8 +8,8 @@ print(os.getcwd())
 
 # Folder which contains all the images 
 # from which video is to be generated 
-os.chdir("C:\\Python\\Geekfolder2") 
-path = "C:\\Python\\Geekfolder2"
+os.chdir("D:\\Projects\\ryt\\imgs") 
+path = "D:\\Projects\\ryt\\imgs"
 
 mean_height = 0
 mean_width = 0
@@ -57,7 +57,7 @@ for file in os.listdir('.'):
 def generate_video(): 
 	image_folder = '.' # make sure to use your folder 
 	video_name = 'mygeneratedvideo.avi'
-	os.chdir("C:\\Python\\Geekfolder2") 
+	os.chdir("D:\\Projects\\ryt\\imgs") 
 	
 	images = [img for img in os.listdir(image_folder) 
 			if img.endswith(".jpg") or
